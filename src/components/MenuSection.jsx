@@ -116,44 +116,35 @@ export default function MenuNavigation() {
           <div className="md:hidden bg-gray-700 text-white py-4 px-6 flex flex-col gap-4">
             <a
               href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
+              className="relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-teal-400 after:-bottom-1 after:left-0"
             >
               Home
             </a>
             <a
-              href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
+              href="#timeline"
+              className="hover:text-teal-400 transition-colors"
             >
-              About
+              Timeline
             </a>
-            <a
-              href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
-            >
+            <a href="#" className="hover:text-teal-400 transition-colors">
               Experience
             </a>
             <a
-              href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
+              href="#project"
+              className="hover:text-teal-400 transition-colors"
             >
               Projects
             </a>
-            <a
-              href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
-            >
+            <a href="#skill" className="hover:text-teal-400 transition-colors">
               Skills
             </a>
             <a
-              href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
+              href="#contactme"
+              className="hover:text-teal-400 transition-colors"
             >
               Contact
             </a>
-            <a
-              href="#"
-              className="border-b border-gray-600 pb-2 hover:text-teal-400"
-            >
+            <a href="#" className="hover:text-teal-400 transition-colors">
               FAQ
             </a>
             <button

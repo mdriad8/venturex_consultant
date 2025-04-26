@@ -12,7 +12,8 @@ const projects = [
   {
     title: "Event Management App",
     description: "An event management application. Build using VUE JS",
-    image: "event-stack.png",
+    image:
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVevK1FdiLtSyu6OPPCTur0vy-25AmfrBBw_2VzLfTkHjaCBozbGwQ-PXqKAvd9K2GmFQy6ujX1cmwUWbO97f0i_bT4f9zrf_80lFFzw-zrR6fOtgxcfKqxdxFBv3iEhPbEhZji8Ki-KcFOgg_U24rlqQP8mMIvX2uD1QXAOBgR-M03-hcKEPHvArYIl0/s320/Screenshot%202025-04-26%20093735.png",
     liveLink: "https://github.com/mdriad8/Event_Managemnet-VUEProject",
     tags: ["Web"],
   },
@@ -50,7 +51,7 @@ const Projects = () => {
   return (
     <div
       id="project"
-      className="w-full bg-gradient-to-br from-teal-900 to-gray-800 text-white py-16 px-4 relative"
+      className="w-full bg-gradient-to-br from-gray-800 to-teal-900 text-white py-16 px-4 relative"
     >
       <div
         className="absolute inset-0"

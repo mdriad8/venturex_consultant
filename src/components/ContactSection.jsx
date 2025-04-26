@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("https://formspree.io/f/xwpopoka", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setStatus("Message sent!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      setStatus("Failed to send message.");
+    }
+  };
+
   return (
     <div
       id="contactme"
@@ -25,28 +55,38 @@ const Contact = () => {
         </p>
 
         <form
-          action="https://formspree.io/f/mvgagzyo"
-          method="POST"
+          onSubmit={handleSubmit}
           className="flex flex-col gap-4 bg-white/10 p-6 rounded-md backdrop-blur-md"
         >
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
             className="px-4 py-2 rounded-md text-gray-900 focus:outline-none"
             required
+            value={formData.name}
+            onChange={handleChange}
           />
+
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
             className="px-4 py-2 rounded-md text-gray-900 focus:outline-none"
             required
+            value={formData.email}
+            onChange={handleChange}
           />
+
           <textarea
+            name="message"
             placeholder="Your Message"
             rows="5"
             className="px-4 py-2 rounded-md text-gray-900 focus:outline-none"
             required
-          ></textarea>
+            value={formData.message}
+            onChange={handleChange}
+          />
           <button
             type="submit"
             className="bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-600 transition-colors"
