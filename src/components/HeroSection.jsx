@@ -91,9 +91,10 @@ export default function HeroSection() {
           {/* Profile Image */}
           <div className="relative mt-10 md:mt-0">
             <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx0tNLJAutrO218ofoUG-SALzO4xOS5vPdCxPQ4pnfuoifbQ7i0ZSaZ5JCpZD0_kpqFC0SSI0cH9VP1MPGMNcoarrL_BiRwdkc0-jrAYCxyoNM5zCJVvHuDKCAZ8d9TE6olK8fBoEu0gnyCeF4DyxvGLlSYdU0Ruu-uG04GpuJkc2F4I77KIukHuz9on8/s4928/DSC_0014.JPG"
-              alt="Riad's Profile"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBDzK58CnNKvImLYuUzkjpMb9xQ-w8d7iJ69OVCzNUJBgTzknj30n4hpCQCD3_a1_o4AOZe68F_B5_ZyIsD8wo-04WjJQ9KE69I4rY82yOnp0QitopvpFBDOZ7zf67rZ06gCxuR85STGlR8T-kbzBh-Go4Wv6k4jHN1YwGhB-Qv0kKtKwibcBt_g5rEw4/s320/DSC_0014.jpg"
+              alt="MdRiad"
               className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-md border-3 border-white border-opacity-20 shadow-lg z-10 relative"
+              loading="lazy"
             />
             <div className="absolute top-4 left-4 w-full h-full border-2 border-dashed border-teal-400 rounded-md z-0"></div>
           </div>
