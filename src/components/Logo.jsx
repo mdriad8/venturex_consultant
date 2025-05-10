@@ -12,7 +12,9 @@ const Logo = () => {
       </div>
       <div className="text-primary font-heading">
         <span className="font-bold text-lg">Venturex</span>
-        <span className="text-sm tracking-wider ml-1 opacity-90">Consult</span>
+        <span className="text-sm tracking-wider ml-1 opacity-90">
+          Consult Service
+        </span>
       </div>
     </Link>
   );

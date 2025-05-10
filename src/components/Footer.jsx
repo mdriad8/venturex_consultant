@@ -17,17 +17,17 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white pt-16 pb-6">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left items-center md:items-start">
           {/* Company Info */}
           <div>
-            <div className="mb-6">
+            <div className="mb-6 flex justify-center md:justify-start">
               <Logo />
             </div>
             <p className="text-gray-300 mb-6">
               Expert consulting for foreign investment, business innovation, and
               digital ecosystems.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="#"
                 className="text-gray-300 hover:text-white transition-colors"
@@ -169,15 +169,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">Contact Us</h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
+              <li className="flex justify-center md:justify-start items-start">
                 <PhoneCall size={18} className="mt-1 mr-3 flex-shrink-0" />
                 <span>+8801630331438</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex justify-center md:justify-start items-start">
                 <Mail size={18} className="mt-1 mr-3 flex-shrink-0" />
                 <span>venturexcs@gmail.com</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex justify-center md:justify-start items-start">
                 <MapPin size={18} className="mt-1 mr-3 flex-shrink-0" />
                 <span>
                   888/1, Room-7 (2nd Floor) Hazi Ashraf Ali Complex, Shewrapara,
